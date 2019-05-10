@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -30,4 +30,301 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+/**
+* Styles for Header component
+*/
+.header {
+  /* border: 1px solid black; */
+  width: 100%;
+  margin: 0 auto;
+  border-top: 6px solid powderblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.header__nav {
+  width: 45%;
+  margin: 20px auto;
+  /* border: 1px solid black; */
+}
+.header__nav--style {
+  padding-top: 5px;
+  margin-left: 100px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+a {
+  color: #555;
+  font-weight: bold;
+  text-decoration: none;
+}
+.header__div1 {
+  width: auto;
+  margin: 20px auto;
+}
+.header__phoneIcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 20px;
+  margin-left: 200px;
+}
+.header__div2 {
+  margin: 20px auto;
+  width: 5%;
+}
+.header__searchIcon {
+  padding: 5px;
+  margin-left: 20px;
+}
+.header__icon--style {
+  border: 1px solid black;
+  border-radius: 40px;
+}
+.header__phoneIcon ion-icon {
+  margin-right: 5px;
+}
+
+/**
+* Styles for Main component
+*/
+.main {
+  height: 89vh;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
+    url(bkground-min.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  border-bottom: 15px solid powderblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* .appoint-section {
+  border: 2px solid black;
+  width: 500px;
+  height: 500px;
+} */
+
+/**
+* Styles for Introduction component
+*/
+.intro-section {
+  /* border: 2px solid black; */
+  width: 500px;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: whitesmoke;
+}
+
+.intro-section__title p {
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+.intro-section__heading h1 {
+  font-size: 3em;
+}
+
+.intro-section__description p > a {
+  font-size: 1em;
+  color: powderblue;
+  text-decoration: underline;
+  font-weight: inherit;
+}
+
+.intro-section__button {
+  margin-top: 30px;
+}
+.intro-section__button button {
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 30px;
+  color: #555;
+  font-weight: bold;
+}
+
+/**
+* Styles for Time Slot UI component
+*/
+.time-slot {
+  /* border: 2px solid black; */
+  /* border-radius: 40px; */
+  width: 396px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.time-slot__button {
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.time-slot__display {
+  /* margin: 10px; */
+}
+.appointment-btn {
+  background-color: whitesmoke;
+  padding: 10px 30px;
+  color: #3fe0d0;
+  font-weight: bold;
+  border-left: 1px solid #eee;
+  border-right: 0.5px solid lightgrey;
+  border-bottom: 4px solid powderblue;
+  /* margin-bottom: 10px; */
+}
+.enquiry-btn {
+  background-color: whitesmoke;
+  padding: 10px 30px;
+  /* margin-bottom: 10px; */
+  color: lightgray;
+  border-bottom: 4px solid #eee;
+  border-right: 1px solid #eee;
+}
+/**
+* Styles for Display component
+*/
+/**
+* Styles for Appointment component
+*/
+.appoint-section {
+  background-color: whitesmoke;
+}
+.appoint-section__drop-down {
+  text-align: center;
+  background-color: whitesmoke;
+  width: 100%;
+  /* padding: 5px; */
+  border: 1px solid powderblue;
+}
+.appoint-section__drop-down select {
+  padding: 5px;
+  padding-right: 40px;
+  border-radius: 5px;
+  margin: 5px;
+  /* text-align: left; */
+}
+.appoint-section__schedule {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.schedule--morning {
+  /* margin: 0 auto; */
+  /* margin-bottom: 10px; */
+  margin-left: 10px;
+  /* border: 0.5px solid black; */
+}
+.schedule--evening {
+  /* margin: 0 auto; */
+  margin-left: 10px;
+  /* margin-top: 10px; */
+  /* border: 0.5px solid black; */
+}
+.schedule--night {
+  /* margin: 0 auto; */
+  margin-left: 10px;
+  /* margin-top: 10px; */
+  /* border: 0.5px solid black; */
+}
+.schedule--weather ion-icon {
+  font-size: 2em;
+}
+
+.appoint-section__schedule--column1 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+.appoint-section__schedule--column2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.schedule--time-slots {
+  display: flex;
+  flex-wrap: wrap;
+}
+.schedule--time-slots div {
+  color: black;
+  font-weight: normal;
+  cursor: pointer;
+}
+.schedule--time-slots div:hover {
+  background-color: powderblue;
+}
+.schedule--time-slots div {
+  /* border: 1px solid black; */
+  border: 0.5px solid lightgrey;
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+}
+.appoint-section__button {
+  margin-left: 20px;
+  /* margin-bottom: 10px; */
+  border-radius: 5px;
+  align-content: center;
+  background-color: #3fe0d0;
+  text-align: center;
+  width: 90%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.appoint-section__button a {
+  text-decoration: none;
+  color: whitesmoke;
+  /* margin-top: 20px; */
+  padding: 10px auto;
+}
+/**
+* Styles for Enquiry component
+*/
+.enquiry-section__form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.enquiry-section__form label {
+  font-size: 1.1em;
+  color: white;
+  /* font-weight: bold; */
+}
+.enquiry-section__button {
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 30px;
+  background-color: #3fe0d0;
+  color: whitesmoke;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.enquiry-section__input {
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-left: 5px;
 }
